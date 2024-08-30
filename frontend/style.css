@@ -1,42 +1,94 @@
-/****** Main Styling ******/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  color: #222;
-  background-color: #ECF0F1;
-  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: #121212;
+  color: aquamarine;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  padding: 0;
-  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: #222222;
 }
 
-.footer {
-  margin-top: 60px;
+h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
 }
 
-a {
-  color: #2574A9;
-}
-
-input {
-  display: block;
-  position: relative;
-  margin: 10px auto;
-}
-
-input#button {
-  width: 230px;
+p {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .view {
-  position:relative;
-  margin: auto;
-  margin-top: 40px;
-  border: 1px  solid  #aaa;
-  padding: 20px;
-  width: 60%;
-  min-width: 400px;
+  margin: 2rem 0rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#inputfield {
+  opacity: 0;
+  position: absolute; 
+  z-index: -1;
+}
+
+#custom-button-div {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem 3rem;
+  border: 2px solid aquamarine;
+  border-radius: 1.5rem;
+}
+
+.button {
+  font-family: "Red Hat Display", sans-serif;
+  padding: 0.5rem 1rem;
+  background-color: aquamarine;
+  color: #00304f;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: 0.3s ease-in;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+#custom-button:hover {
+  background-color: #81c784;
+}
+
+#file-chosen {
+  margin-left: 10px;
+  font-style: italic;
+  color: #ccc;
+}
+
+#button:hover{
+  background-color: rgb(127, 255, 138);
+}
+
+#button:active{
+  background-color: rgb(89, 254, 199);
 }
